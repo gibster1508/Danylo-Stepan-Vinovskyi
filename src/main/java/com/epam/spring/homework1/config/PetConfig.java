@@ -9,7 +9,6 @@ import org.springframework.context.annotation.*;
 @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = Spider.class))
 @Configuration
 public class PetConfig {
-
     @Bean
     @Primary
     public Cheetah cheetah1() {

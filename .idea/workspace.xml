@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eadb1131-ec1c-4709-9703-a125db49398e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Danylo-Stepan-Vinovskyi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Danylo-Stepan-Vinovskyi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/config/BeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/config/PetConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/config/PetConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/other/OtherBeanA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/other/OtherBeanA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/other/OtherBeanB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/other/OtherBeanB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/other/OtherBeanC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/other/OtherBeanC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/pet/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/pet/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/pet/Cheetah.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/pet/Cheetah.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/pet/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/pet/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/pet/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/pet/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/pet/Spider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/spring/homework1/pet/Spider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/spring/homework1/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/spring/homework1/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/spring/homework1/config/BeansConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/spring/homework1/config/BeansConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/spring/homework1/config/PetConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/spring/homework1/config/PetConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/spring/homework1/other/OtherBeanA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/spring/homework1/other/OtherBeanA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/spring/homework1/other/OtherBeanB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/spring/homework1/other/OtherBeanB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/spring/homework1/other/OtherBeanC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/spring/homework1/other/OtherBeanC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/spring/homework1/pet/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/spring/homework1/pet/Pet.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="HW_1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2BX3JjLRLQbq38WuD5tvhonA5C1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epam.spring.homework1.Application" />
+      <module name="Danylo-Stepan-Vinovskyi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.spring.homework1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eadb1131-ec1c-4709-9703-a125db49398e" name="Changes" comment="" />
+      <created>1657038542520</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657038542520</updated>
+      <workItem from="1657038546051" duration="879000" />
+      <workItem from="1657039565390" duration="437000" />
+      <workItem from="1657116539103" duration="665000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
