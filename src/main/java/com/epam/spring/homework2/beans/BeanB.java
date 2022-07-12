@@ -5,6 +5,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class BeanB extends BeanParent {
 
+    public BeanB(String name, int value) {
+        super(name, value);
+    }
+
     public void init() {
         System.out.println("BeanB initialization");
     }

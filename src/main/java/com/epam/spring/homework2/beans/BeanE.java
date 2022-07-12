@@ -8,6 +8,10 @@ import javax.annotation.PreDestroy;
 @Component
 public class BeanE extends BeanParent {
 
+    public BeanE(String name, int value) {
+        super(name, value);
+    }
+
     @PostConstruct
     public void postConstruct() {
         System.out.println("PostConstruct method");
@@ -17,5 +21,4 @@ public class BeanE extends BeanParent {
     public void preDestroy() {
         System.out.println("PreDestroy method");
     }
-
 }

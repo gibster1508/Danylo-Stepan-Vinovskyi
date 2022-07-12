@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class BeanPP implements BeanPostProcessor {
+
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         if (bean instanceof BeanParent)
             if (((BeanParent) bean).getName() != null && ((BeanParent) bean).getValue() >= 0)

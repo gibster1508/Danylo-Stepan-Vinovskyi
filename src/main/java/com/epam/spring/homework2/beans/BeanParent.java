@@ -4,8 +4,13 @@ import org.springframework.context.annotation.PropertySource;
 
 @PropertySource("classpath:BeansValues.properties")
 public class BeanParent {
-    String name;
-    int value;
+    private String name;
+    private int value;
+
+    public BeanParent(String name, int value) {
+        this.name = name;
+        this.value = value;
+    }
 
     @Override
     public String toString() {

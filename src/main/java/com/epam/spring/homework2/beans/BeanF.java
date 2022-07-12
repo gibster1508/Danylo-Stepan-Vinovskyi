@@ -8,4 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class BeanF extends BeanParent {
 
+    public BeanF(String name, int value) {
+        super(name, value);
+    }
 }

@@ -4,6 +4,7 @@ import com.epam.spring.homework2.beans.BeanB;
 import com.epam.spring.homework2.beans.BeanC;
 import com.epam.spring.homework2.beans.BeanD;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
 
@@ -13,32 +14,22 @@ import java.util.Objects;
 @Configuration
 @Import(SecondConfig.class)
 public class FirstConfig {
-    @Autowired
-    Environment env;
 
+    @Bean(initMethod = "init", destroyMethod = "destroy")
     @DependsOn("beanD")
-    @Bean(initMethod = "init", destroyMethod = "destroy")
-    public BeanB beanB() {
-        BeanB beanB = new BeanB();
-        beanB.setName(env.getProperty("BeanB.name"));
-        beanB.setValue(Integer.parseInt(Objects.requireNonNull(env.getProperty("BeanB.value"))));
-        return beanB;
+    public BeanB beanB(@Value("${beanB.name}") final String name, @Value("${beanB.value}") final int value) {
+        return new BeanB(name, value);
     }
 
+
+    @Bean(initMethod = "init", destroyMethod = "destroy")
     @DependsOn("beanB")
-    @Bean(initMethod = "init", destroyMethod = "destroy")
-    public BeanC beanC() {
-        BeanC beanC = new BeanC();
-        beanC.setName(env.getProperty("BeanC.name"));
-        beanC.setValue(Integer.parseInt(Objects.requireNonNull(env.getProperty("BeanC.value"))));
-        return beanC;
+    public BeanC beanC(@Value("${beanC.name}") final String name, @Value("${beanC.value}") final int value) {
+        return new BeanC(name, value);
     }
 
     @Bean(initMethod = "init", destroyMethod = "destroy")
-    public BeanD beanD() {
-        BeanD beanD = new BeanD();
-        beanD.setName(env.getProperty("BeanD.name"));
-        beanD.setValue(Integer.parseInt(Objects.requireNonNull(env.getProperty("BeanD.value"))));
-        return beanD;
+    public BeanD beanD(@Value("${beanD.name}") final String name, @Value("${beanD.value}") final int value) {
+        return new BeanD(name, value);
     }
 }
