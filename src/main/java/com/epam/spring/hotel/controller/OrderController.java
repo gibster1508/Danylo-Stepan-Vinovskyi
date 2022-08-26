@@ -10,23 +10,24 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
+@RequestMapping("/order")
 public class OrderController {
     private final OrderService orderService;
 
     @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping(value = "/order")
+    @PostMapping
     public OrderDto createOrder(@RequestBody OrderDto orderDto) {
         return orderService.createOrder(orderDto);
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping(value = "/order")
+    @GetMapping
     public List<OrderDto> getAllOrders() {
         return orderService.listOrders();
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @PutMapping(value = "/order/{idOrder}")
+    @PutMapping(value = "/{idOrder}")
     public OrderDto updateOrder(@PathVariable long idOrder, @RequestBody OrderDto orderDto) {
         return orderService.updateOrder(idOrder, orderDto);
     }
