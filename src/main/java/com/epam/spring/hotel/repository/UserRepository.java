@@ -16,7 +16,4 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     boolean existsByEmail(String oldLogin);
 
-    @Query("select o from Order o where o.idOrder >= ?1")
-    Page<Order> findOrderByIdUser(Long id, Pageable pageable);
-
 }

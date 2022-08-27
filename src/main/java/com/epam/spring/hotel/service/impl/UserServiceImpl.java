@@ -69,8 +69,5 @@ public class UserServiceImpl implements UserService {
         userRepository.deleteById(id);
     }
 
-    @Override
-    public Page<OrderDto> getAllUserOrders(long id, Pageable pageable) {
-        return userRepository.findOrderByIdUser(id, pageable).map(OrderMapper.INSTANCE::mapOrderToOrderDto);
-    }
+
 }

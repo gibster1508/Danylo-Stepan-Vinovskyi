@@ -17,6 +17,4 @@ public interface UserService {
     UserDto updateUser(String email, UserDto userDto);
 
     void deleteUser(Long id);
-
-    Page<OrderDto> getAllUserOrders(long id, Pageable pageable);
 }

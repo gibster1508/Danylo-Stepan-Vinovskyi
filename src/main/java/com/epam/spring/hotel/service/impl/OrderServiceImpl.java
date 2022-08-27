@@ -8,10 +8,12 @@ import com.epam.spring.hotel.repository.PaymentStatusRepository;
 import com.epam.spring.hotel.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -42,5 +44,8 @@ public class OrderServiceImpl implements OrderService {
         Order order = OrderMapper.INSTANCE.mapOrderDtoToOrder(orderDto);
         Order updatedOrder = orderRepository.save(order);
         return OrderMapper.INSTANCE.mapOrderToOrderDto(updatedOrder);
+    }
+    public List<OrderDto> getAllUserOrders(long id, Pageable pageable) {
+        return orderRepository.findOrderByIdUser(id, pageable).stream().map(OrderMapper.INSTANCE::mapOrderToOrderDto).collect(Collectors.toList());
     }
 }

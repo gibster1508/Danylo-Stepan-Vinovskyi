@@ -44,11 +44,5 @@ public interface UserApi {
     @ResponseStatus(HttpStatus.OK)
     @DeleteMapping("/{id}")
     ResponseEntity<Void> deleteUser(@PathVariable Long id);
-
-    @ApiOperation("Select all user's orders")
-    @ApiImplicitParam(name = "id", paramType = "path", required = true, value = "User id")
-    @ResponseStatus(HttpStatus.OK)
-    @GetMapping("/orders/{id}")
-    Page<OrderDto> getAllUserOrders(@PathVariable long id, @RequestParam("pageSize") int pageSize, @RequestParam("pageNumber") int pageNumber,
-                                    @RequestParam("sortType") String sortType);
+    
 }

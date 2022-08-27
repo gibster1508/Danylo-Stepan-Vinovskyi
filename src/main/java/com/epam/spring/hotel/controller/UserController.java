@@ -38,9 +38,4 @@ public class UserController implements UserApi {
         userService.deleteUser(id);
         return ResponseEntity.noContent().build();
     }
-
-    @Override
-    public Page<OrderDto> getAllUserOrders(long id, int pageSize, int pageNumber, String sortType) {
-        return userService.getAllUserOrders(id, PageRequest.of(pageSize, pageNumber, Sort.by(Sort.DEFAULT_DIRECTION, sortType)));
-    }
 }
