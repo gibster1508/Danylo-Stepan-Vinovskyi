@@ -30,4 +30,10 @@ public interface OrderApi {
     @PutMapping(value = "/{idOrder}")
     OrderDto updateOrder(@PathVariable int idOrder, @RequestBody @Validated OrderDto orderDto);
 
+    @ApiOperation("get all user's orders")
+    @ApiImplicitParam(name = "id", paramType = "path", required = true, value = "user id")
+    @ResponseStatus(HttpStatus.OK)
+    @GetMapping(value = "/user/{id}")
+    List<OrderDto> getAllUserOrders(@PathVariable long id, @RequestParam int pageSize,
+                                    @RequestParam int pageNumber,@RequestParam String sortType);
 }
