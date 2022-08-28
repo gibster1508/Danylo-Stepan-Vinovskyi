@@ -102,7 +102,7 @@ public class OrderControllerTest {
     }
 
     @Test
-    void getInternalServerErrorAllUserOrders() throws Exception {
+    void getAllUserOrdersInternalServerError() throws Exception {
         when(orderService.getAllUserOrders(eq(ID), eq(PageRequest.of(1, 1, Sort.by(Sort.DEFAULT_DIRECTION, "idOrder"))))).thenThrow(new NullPointerException());
         mockMvc.perform(get(URL + "user/" + ID + "?pageSize=1&pageNumber=1&sortType=idOrder"))
                 .andDo(print())
