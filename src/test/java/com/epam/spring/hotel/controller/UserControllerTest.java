@@ -14,7 +14,9 @@ import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
+
 import java.util.Collections;
+
 import static com.epam.spring.hotel.test.util.TestUserDataUtil.TEST_EMAIL;
 import static com.epam.spring.hotel.test.util.TestUserDataUtil.createUserDto;
 import static org.mockito.ArgumentMatchers.eq;

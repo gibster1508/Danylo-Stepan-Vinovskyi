@@ -4,7 +4,6 @@ import com.epam.spring.hotel.dto.UserDto;
 import com.epam.spring.hotel.exception.EntityNotFoundException;
 import com.epam.spring.hotel.model.User;
 import com.epam.spring.hotel.test.util.TestUserDataUtil;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -20,9 +19,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @Profile("test")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class HotelApplicationTests {
-
-    @Autowired
-    private ObjectMapper objectMapper;
 
     @Value("http://localhost:${local.server.port}/hotel/user/")
     private String baseUrl;
@@ -56,5 +52,6 @@ class HotelApplicationTests {
         testRestTemplate.delete(baseUrl + email);
         testRestTemplate.getForObject(baseUrl + email, EntityNotFoundException.class);
     }
+
 
 }
