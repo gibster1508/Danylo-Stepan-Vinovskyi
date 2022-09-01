@@ -43,7 +43,7 @@ public class UserServiceImpl implements UserService {
         }
         user.setRole(userRoleRepository.findByRoleName("user").orElseThrow(() -> new EntityNotFoundException("role not exist")));
         User createdUser = userRepository.save(UserMapper.INSTANCE.mapUserDtoToUser(user));
-        log.info("user was succesfully created with email={} and id={}", createdUser.getEmail(), createdUser.getIdUser());
+        log.info("user was successfully created with email={} and id={}", createdUser.getEmail(), createdUser.getIdUser());
         return UserMapper.INSTANCE.mapUserToUserDto(createdUser);
     }
 

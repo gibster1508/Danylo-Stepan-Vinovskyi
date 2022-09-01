@@ -41,5 +41,4 @@ public interface UserApi {
     @ResponseStatus(HttpStatus.OK)
     @DeleteMapping("/{email}")
     ResponseEntity<Void> deleteUser(@PathVariable String email);
-
 }

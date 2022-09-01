@@ -34,5 +34,4 @@ public class UserController implements UserApi {
         userService.deleteUser(email);
         return ResponseEntity.noContent().build();
     }
-
 }
