@@ -1,6 +1,5 @@
 package com.epam.spring.hotel.mapper;
 
-
 import com.epam.spring.hotel.dto.UserDto;
 import com.epam.spring.hotel.model.User;
 import org.mapstruct.Mapper;
