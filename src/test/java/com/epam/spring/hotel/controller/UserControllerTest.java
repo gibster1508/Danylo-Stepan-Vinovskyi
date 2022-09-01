@@ -1,5 +1,14 @@
 package com.epam.spring.hotel.controller;
 
+import static com.epam.spring.hotel.test.util.TestUserDataUtil.TEST_EMAIL;
+import static com.epam.spring.hotel.test.util.TestUserDataUtil.createUserDto;
+import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
 import com.epam.spring.hotel.dto.UserDto;
 import com.epam.spring.hotel.exception.EntityNotFoundException;
 import com.epam.spring.hotel.service.UserService;
@@ -14,17 +23,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
-
 import java.util.Collections;
-
-import static com.epam.spring.hotel.test.util.TestUserDataUtil.TEST_EMAIL;
-import static com.epam.spring.hotel.test.util.TestUserDataUtil.createUserDto;
-import static org.mockito.ArgumentMatchers.eq;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(UserController.class)

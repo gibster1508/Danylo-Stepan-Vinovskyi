@@ -1,5 +1,15 @@
 package com.epam.spring.hotel.service;
 
+import static com.epam.spring.hotel.test.util.TestOrderDataUtil.ID;
+import static java.util.Arrays.asList;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 import com.epam.spring.hotel.dto.OrderDto;
 import com.epam.spring.hotel.exception.EntityNotFoundException;
 import com.epam.spring.hotel.mapper.OrderMapper;
@@ -18,20 +28,9 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
-
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
-
-import static com.epam.spring.hotel.test.util.TestOrderDataUtil.ID;
-import static java.util.Arrays.asList;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 @ExtendWith({MockitoExtension.class})
 public class OrderServiceImplTest {

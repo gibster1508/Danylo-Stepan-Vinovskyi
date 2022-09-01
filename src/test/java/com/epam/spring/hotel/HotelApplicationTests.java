@@ -1,5 +1,7 @@
 package com.epam.spring.hotel;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.epam.spring.hotel.dto.UserDto;
 import com.epam.spring.hotel.exception.EntityNotFoundException;
 import com.epam.spring.hotel.model.User;
@@ -13,8 +15,6 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Profile("test")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)

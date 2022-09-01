@@ -16,5 +16,4 @@ public class ContactNumberValidator implements
         return contactField != null && contactField.matches("[0-9]+")
                 && (contactField.length() > 8) && (contactField.length() < 14);
     }
-
 }

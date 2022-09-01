@@ -3,7 +3,6 @@ package com.epam.spring.hotel.test.util;
 import com.epam.spring.hotel.dto.OrderDto;
 import com.epam.spring.hotel.model.Order;
 import com.epam.spring.hotel.model.enums.TypesOfRooms;
-
 import java.util.Date;
 
 public class TestOrderDataUtil {

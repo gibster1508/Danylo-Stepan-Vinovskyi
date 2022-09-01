@@ -3,7 +3,6 @@ package com.epam.spring.hotel.test.util;
 import com.epam.spring.hotel.dto.UserDto;
 import com.epam.spring.hotel.model.User;
 import com.epam.spring.hotel.model.UserRole;
-
 import java.util.Date;
 
 

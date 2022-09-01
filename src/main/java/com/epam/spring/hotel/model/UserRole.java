@@ -12,6 +12,7 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserRole {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long roleId;
@@ -21,5 +22,4 @@ public class UserRole {
     @OneToMany(mappedBy = "role")
     @ToString.Exclude
     private Set<User> userSet;
-
 }

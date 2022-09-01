@@ -1,5 +1,14 @@
 package com.epam.spring.hotel.service;
 
+import static com.epam.spring.hotel.test.util.TestUserDataUtil.*;
+import static java.util.Arrays.asList;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.*;
+
 import com.epam.spring.hotel.dto.UserDto;
 import com.epam.spring.hotel.exception.EntityNotFoundException;
 import com.epam.spring.hotel.mapper.UserMapper;
@@ -17,19 +26,9 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
 import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
-
-import static com.epam.spring.hotel.test.util.TestUserDataUtil.*;
-import static java.util.Arrays.asList;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.*;
 
 @ExtendWith({MockitoExtension.class})
 public class UserServiceImplTest {

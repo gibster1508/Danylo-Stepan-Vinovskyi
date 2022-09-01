@@ -12,12 +12,15 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PaymentStatus {
+
     @JsonIgnore
     @OneToMany(mappedBy = "paymentStatus")
     @ToString.Exclude
     List<Order> orders;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long statusId;
+
     private String name;
 }

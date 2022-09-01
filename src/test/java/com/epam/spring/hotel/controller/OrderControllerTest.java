@@ -1,5 +1,14 @@
 package com.epam.spring.hotel.controller;
 
+import static com.epam.spring.hotel.test.util.TestOrderDataUtil.ID;
+import static com.epam.spring.hotel.test.util.TestOrderDataUtil.createOrderDto;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
 import com.epam.spring.hotel.dto.OrderDto;
 import com.epam.spring.hotel.service.OrderService;
 import com.epam.spring.hotel.test.config.TestConfig;
@@ -16,17 +25,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
-
 import java.util.Collections;
-
-import static com.epam.spring.hotel.test.util.TestOrderDataUtil.ID;
-import static com.epam.spring.hotel.test.util.TestOrderDataUtil.createOrderDto;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.eq;
-import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(OrderController.class)

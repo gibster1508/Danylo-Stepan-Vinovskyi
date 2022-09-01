@@ -15,17 +15,22 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Order {
+
     @ManyToOne()
     @JoinColumn(name = "id_user")
     User user;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idOrder;
+
     private Date dateOfSettlement;
     private Date dateOfDeparture;
     private Date dateOfCreateOrder;
+
     @Enumerated(EnumType.STRING)
     private TypesOfRooms typeOfRoom;
+
     @ManyToOne()
     @JoinColumn(name = "status_id")
     @JsonIgnore
