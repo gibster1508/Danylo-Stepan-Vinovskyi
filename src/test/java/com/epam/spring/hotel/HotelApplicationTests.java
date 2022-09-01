@@ -52,6 +52,4 @@ class HotelApplicationTests {
         testRestTemplate.delete(baseUrl + email);
         testRestTemplate.getForObject(baseUrl + email, EntityNotFoundException.class);
     }
-
-
 }

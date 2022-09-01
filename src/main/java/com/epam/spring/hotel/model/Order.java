@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 import java.util.Date;
 
@@ -31,5 +30,4 @@ public class Order {
     @JoinColumn(name = "status_id")
     @JsonIgnore
     private PaymentStatus paymentStatus;
-
 }

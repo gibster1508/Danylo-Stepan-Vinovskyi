@@ -90,7 +90,7 @@ public class OrderControllerTest {
     }
 
     @Test
-    void getAllUserOrdersTest() throws Exception {
+    void getAllUserOrders() throws Exception {
         OrderDto orderDto = createOrderDto();
 
         when(orderService.getAllUserOrders(eq(ID), eq(PageRequest.of(1, 1, Sort.by(Sort.DEFAULT_DIRECTION, "idOrder"))))).thenReturn(Collections.singletonList(orderDto));
@@ -102,7 +102,7 @@ public class OrderControllerTest {
     }
 
     @Test
-    void getAllUserOrdersInternalServerErrorTest() throws Exception {
+    void getAllUserOrdersInternalServerError() throws Exception {
         when(orderService.getAllUserOrders(eq(ID), eq(PageRequest.of(1, 1, Sort.by(Sort.DEFAULT_DIRECTION, "idOrder"))))).thenThrow(new NullPointerException());
         mockMvc.perform(get(URL + "user/" + ID + "?pageSize=1&pageNumber=1&sortType=idOrder"))
                 .andDo(print())
