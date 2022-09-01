@@ -30,6 +30,10 @@ class HotelApplicationTests {
     private TestRestTemplate testRestTemplate;
 
     @Test
+    void contextLoads() {
+    }
+
+    @Test
     void createUserTest() {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
@@ -52,4 +56,5 @@ class HotelApplicationTests {
         testRestTemplate.delete(baseUrl + email);
         testRestTemplate.getForObject(baseUrl + email, EntityNotFoundException.class);
     }
+
 }
